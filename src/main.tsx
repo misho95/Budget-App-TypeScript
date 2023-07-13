@@ -2,8 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Header from './components/header'
 import Container from './components/container'
+import Header from './components/header'
+import HomePage from './pages/homepage'
 
 const router = createBrowserRouter([
   {
@@ -11,6 +12,7 @@ const router = createBrowserRouter([
     element: 
     <Container>
       <Header />
+      <HomePage />
     </Container>
   }
 ])
