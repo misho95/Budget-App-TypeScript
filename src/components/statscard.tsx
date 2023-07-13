@@ -1,7 +1,7 @@
 const StatsCard = ( {type}: { type:string } ) => {
 
     return(
-        <div className="bg-white shadow-sm shadow-gray-400 p-3 text-gray-600">
+        <div className="bg-white shadow-sm shadow-gray-400 p-3 text-gray-600 rounded-lg">
             <h1 className="text-lg"><b>{type}</b></h1>
             <ul>
                 <li>
