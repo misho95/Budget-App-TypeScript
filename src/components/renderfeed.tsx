@@ -20,7 +20,15 @@ const RenderFeed = () => {
     ]
 
     return(
-        <div className="flex flex-wrap p-1 gap-3 justify-center sm:justify-start">
+        <div className="flex flex-col flex-wrap p-1 gap-3 justify-center sm:justify-start">
+          <div className="flex justify-start pl-5">
+              <select className="bg-gray-100 py-1 px-2 rounded-md text-gray-500 shadow-sm shadow-gray-400 w-fit">
+                  <option>Date</option>
+                  <option>Expense</option>
+                  <option>Income</option>
+              </select>
+          </div>
+          <div className="flex flex-wrap p-1 gap-3 justify-center sm:justify-start">
         {
             data.map( (inv) => {
                 return(
@@ -43,6 +51,7 @@ const RenderFeed = () => {
             })
        
         }
+       </div>
     </div>
     )
 }

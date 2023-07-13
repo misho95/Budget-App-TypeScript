@@ -3,9 +3,21 @@ import { Link } from 'react-router-dom'
 const Nav = () => {
     return(
         <div className='flex gap-3'>
-            <Link to='/' className='text-green-800 hover:text-green-200'>Home</Link>
-            <Link to='/' className='text-green-800 hover:text-green-200'>SignUp</Link>
-            <Link to='/' className='text-green-800 hover:text-green-200'>SignIn</Link>
+            <Link to='/' className='text-gray-400 hover:text-gray-300'>
+                <span className="material-symbols-outlined">
+                home
+                </span>
+            </Link>
+            <Link to='/' className='text-gray-400 hover:text-gray-300'>
+                <span className="material-symbols-outlined">
+                person_add
+                </span>
+            </Link>
+            <Link to='/' className='text-gray-400 hover:text-gray-300'>
+                <span className="material-symbols-outlined">
+                person
+                </span>
+            </Link>
         </div>
     )
 }
