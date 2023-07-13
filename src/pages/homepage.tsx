@@ -5,12 +5,12 @@ import UserInfo from "../components/userinfo";
 
 const HomePage = () => {
   return (
-    <section className="flex justify-between">
-      <div className="w-1/5 h-fit bg-yellow-500">
+    <section className="flex flex-col lg:flex-row justify-between">
+      <div className="w-full lg:w-1/5 h-fit p-3">
         <UserInfo />
         <Stats />
       </div>
-      <div className="w-full h-fit bg-gray-400 p-2">
+      <div className="w-full h-fit p-2 flex flex-col gap-5">
             <Filter />
             <RenderFeed />
       </div>
