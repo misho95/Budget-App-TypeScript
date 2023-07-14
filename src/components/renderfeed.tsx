@@ -32,7 +32,7 @@ const RenderFeed = () => {
         {
             data.map( (inv) => {
                 return(
-                    <div key={inv.id} className={`flex flex-col bg-gray-100 shadow-sm shadow-gray-400 rounded-md p-4 text-gray-500`}>
+                    <div key={inv.id} className={`flex flex-col bg-gray-100 dark:bg-gray-200 shadow-sm shadow-gray-400 rounded-md p-4 text-gray-500`}>
                     <span>
                       <b>date:</b> {inv.date}
                     </span>
